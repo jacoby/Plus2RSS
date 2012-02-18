@@ -1,0 +1,8 @@
+Program to download a JSON-formatted feed from a Google Plus account
+and convert it to an RSS Feed.
+
+You will need a Google Plus API key and a Google Plus account. 
+Your keys are saved in .plus2rss.yml 
+
+As currently written, the program spits the RSS to STDOUT.
+You will want to pipe it to a file, most likely in a crontab. 
