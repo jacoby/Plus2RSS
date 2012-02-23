@@ -8,6 +8,7 @@ use Getopt::Long ;
 use IO::Interactive qw{ interactive } ;
 use JSON ;
 use LWP::UserAgent ;
+use LWP::Protocol::https ;
 use XML::Parser ;
 use XML::RSS ;
 use YAML qw{ LoadFile DumpFile } ;
@@ -96,4 +97,3 @@ sub config {
     return $config ;
     }
 # --------- --------- --------- --------- --------- --------- ---------
-

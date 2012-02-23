@@ -6,3 +6,6 @@ Your keys are saved in .plus2rss.yml
 
 As currently written, the program spits the RSS to STDOUT.
 You will want to pipe it to a file, most likely in a crontab. 
+
+23 Feb 2012 - added use LWP::Protocol::https
+
