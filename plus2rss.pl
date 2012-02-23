@@ -26,7 +26,10 @@ sub handle_plus {
     my ( $config ) = shift ;
     my $api_base_url = 'https://www.googleapis.com/plus/v1/' ;
     my $dispatch = { get_activities => 'people/USER_ID/activities/public', } ;
-    my $maxResults = '&maxResults=' . $config->{ maxResults } ;
+    my $maxResults ;
+    if ( $config->{ maxResults } ) {
+        $maxResults = '&maxResults=' . $config->{ maxResults } ;
+        }
     my $api_url =
           $api_base_url
         . $dispatch->{ get_activities } . '?key='
