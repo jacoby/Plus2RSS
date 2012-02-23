@@ -8,4 +8,6 @@ As currently written, the program spits the RSS to STDOUT.
 You will want to pipe it to a file, most likely in a crontab. 
 
 23 Feb 2012 - added use LWP::Protocol::https
-
+23 Feb 2012 - added --file and --maxResults flags to command-line
+              You can also stick maxResults and output_file values
+              into your YAML to make them persistent
